@@ -11,7 +11,7 @@
 "   it appears the same as normal mode
 
 " Normal mode                                    " fg             & bg
-let s:N1 = [ '#005f00' , '#afd700' , 22  , 148 ] " darkestgreen   & brightgreen
+let s:N1 = [ '#9e9e9e' , '#303030' , 255 , 240 ] " darkestgreen   & brightgreen
 let s:N2 = [ '#9e9e9e' , '#303030' , 247 , 236 ] " gray8          & gray2
 let s:N3 = [ '#ffffff' , '#121212' , 231 , 233 ] " white          & gray4
 
@@ -47,3 +47,6 @@ let g:airline#themes#powerlineish#palette.replace.airline_z = g:airline#themes#p
 let s:IA = [ s:N2[0] , s:N3[1] , s:N2[2] , s:N3[3] , '' ]
 let g:airline#themes#powerlineish#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 
+let g:airline#themes#powerlineish#palette.tabline = {
+            \'airline_tabsel': ['#ffffff', '#875faf', 255, 240, 'bold'],
+            \'airline_tabfill': ['#ffffff', '#242b2c', 255, 236]}
